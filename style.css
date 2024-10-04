@@ -1,0 +1,509 @@
+/* Video konteyneri */
+/* Video konteyneri */
+.video-container {
+    position: fixed; /* Ekrana sabitler */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1000; /* Videoyu içeriğin arkasına atar, bu değeri artırabilirsiniz */
+}
+
+/* Video stili */
+.video-container video {
+    min-width: 100%; /* Genişliği ekranın tamamını kaplar */
+    min-height: 100%; /* Yüksekliği ekranın tamamını kaplar */
+    object-fit: cover; /* Videonun orantılı bir şekilde yerleşmesini sağlar */
+}
+
+/* Soluk bir siyah katman ekleyerek videonun parlaklığını azalt */
+.video-overlay {
+    position: absolute; /* Katmanı video üzerine yerleştir */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Siyah renk, %50 opaklık */
+    z-index: -5; /* Video katmanının üstüne yerleştir */
+}
+
+/* Diğer stiller... */
+
+/* Footer */
+footer {
+    /* Diğer stiller */
+    z-index: 1000; /* Footer'ın diğer elemanların üzerinde olmasını sağlar */
+}
+
+/* Diğer içerikler ve stiller... */
+
+
+/* Footer */
+/* Footer stili */
+/* Footer stili */
+footer {
+    background-color: rgb(80, 89, 119); /* Footer arka plan rengi beyaz */
+    color: rgb(0, 0, 0); /* Yazı rengi siyah */
+    padding: 1px 0; /* Üst ve alt boşluğu küçült */
+    text-align: center; /* Metinleri ortala */
+    width: 100%; /* Footer genişliği tam sayfa olacak */
+    height: 80px; /* Footer yüksekliği */
+    position: fixed; /* Footer'ı sabitler */
+    bottom: 0; /* Sayfanın altına sabitler */
+    left: 0; /* Sol tarafa hizalar */
+    z-index: 1000; /* Footer'ın diğer elemanların üzerinde olmasını sağlar */
+}
+
+
+footer p {
+    margin-bottom: -330px; /* Sosyal medya ikonlarıyla metin arasındaki boşluk küçültüldü */
+    font-size: 12px; /* Yazı boyutu küçültüldü */
+    color: #000000; /* Yazı rengini gri tonlarında yap */
+}
+
+footer .social-icons {
+    display: flex; /* İkonları yatay olarak yerleştir */
+    justify-content: center; /* İkonları ortala */
+    gap: 10px; /* İkonlar arasındaki boşluk küçültüldü */
+}
+
+footer .social-icons a {
+    display: inline-block; /* Bağlantıları satır içi blok olarak yerleştir */
+    margin: 0 5px; /* İkonlar arasında yatay boşluk küçültüldü */
+}
+
+footer .social-icons img {
+    width: 24px; /* İkon boyutu */
+    height: 24px; /* Yükseklik boyutu */
+    transition: transform 0.3s ease; /* Üzerine gelindiğinde büyüme efekti */
+}
+
+footer .social-icons img:hover {
+    transform: scale(1.2); /* Üzerine gelindiğinde büyütme (1.2 katı) */
+}
+
+footer .social-icons img:hover {
+    filter: grayscale(0%); /* Üzerine gelindiğinde renkli ikonlar */
+}
+
+footer .email-link {
+    display: inline-block; /* E-posta bağlantısı da satır içi blok */
+    margin-left: 5px; /* İkon ile arasındaki boşluk küçültüldü */
+    font-size: 14px; /* Yazı boyutu küçültüldü */
+}
+
+footer .email-link img {
+    width: 24px; /* E-posta ikonu boyutu küçültüldü */
+    height: 24px;
+}
+/* Educations&Certifications Dış Çerçeve Stili */
+.outer-frame {
+    background-color: #001832; /* Koyu mavi arka plan */
+    border-radius: 10px; /* Kenarları yuvarlatılmış çerçeve */
+    padding: 40px; /* İçerik ile kenar arasındaki boşluk */
+    width: 100%; /* Genişliği artırıldı (isteğe bağlı) */
+    margin: 30px auto; /* Ortalamak için margin ayarlandı */
+    position: relative; /* Pozisyonu ayarla */
+    z-index: 0; /* Arka planda kalması için z-index */
+    min-height: 200px; /* Minimum yükseklik ayarlayın */
+}
+/* İç çerçeve stil düzenlemesi */
+/* İç çerçeve stili */
+.inner-frame {
+    background-color: rgba(255, 255, 255, 0.911); /* Arka plan beyaz */
+    color: black; /* Yazı rengi siyah */
+    padding: 10px; /* İçerik için padding artırıldı */
+    border-radius: 10px; /* Kenarları yuvarlatılmış çerçeve */
+    width: 100%; /* Genişlik */
+    z-index: 1; /* Çerçeveyi başlığın üstüne almak için */
+    position: relative; /* Pozisyonu ayarla */
+    min-height: 200px; /* Dikey büyüklük için minimum yükseklik artırıldı */
+    margin-top: 1px; /* Dış çerçeveden ayırmak için margin eklendi */
+    font-size: 20px;
+}
+
+/* Her bir eğitim bölümünün stili */
+.section-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Arka plan beyaz */
+    color: black; /* Yazı rengi siyah */
+    padding: 10px; /* İçerik için padding */
+    border-radius: 10px; /* Kenarları yuvarlatılmış çerçeve */
+    width: 48%; /* Her bölümün genişliği */
+    position: relative; /* Pozisyonu ayarla */
+}
+
+/* Video konteyneri */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -10;
+}
+
+.video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.outer-frame.section-container {
+    z-index: -1; /* Videonun arkasında kalır */
+  }
+
+/* Navbar stili */
+.container .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: rgb(80, 89, 119);
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar .logo {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: -70px; 
+}
+
+.navbar .logo img {
+    width: 200px; /* GIF boyutu 125px */
+    height: 125px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #f3f3f3;
+    margin-left: 40px; /* Bağlantılar arasına boşluk */
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0.8px;
+    line-height: 80px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 13px;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    background: #D35400;
+    border-radius: 2px;
+}
+
+/* Profil kısmı için stil */
+.profile-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 50px;
+    margin-top: 150px; /* Navbar'ın altına yerleşmesi için boşluk */
+}
+
+.profile-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    position: absolute;
+    left: 50px;
+    top: 150px; /* Profil fotoğrafı sayfanın solunda ve "ABOUT ME" hizasında */
+}
+
+/* Section stil düzenlemesi */
+section {
+    padding: 20px 20px; /* Üst padding'i sabit tut */
+    color: white;
+    position: relative; /* Section'un konumunu ayarla */
+    margin: 0 auto; /* Ortalamak için margin ayarlandı */
+    text-align: center; /* İçeriği ortala */
+    display: flex; /* Flexbox ile ortalama sağlandı */
+    flex-direction: column; /* Dikey hizalama */
+    justify-content: center; /* Dikey olarak merkezleme */
+    align-items: center; /* Yatay olarak merkezleme */
+    min-height: 100vh; /* Sayfanın tamamını kapsaması için minimum yükseklik */
+}
+
+/* Başlık stili */
+h2 {
+    margin: -30px auto 20px; /* Üst marjı negatif yaparak dış çerçeve ile üst üste bindirin */
+    background-color: white; /* Arka plan beyaz */
+    color: black; /* Yazı rengi siyah */
+    padding: 15px; /* Çerçeve padding'i artırıldı */
+    border-radius: 10px; /* Kenarları yuvarlatılmış çerçeve */
+    width: 40%; /* Genişliği ayarlandı */
+    text-align: center; /* Metni ortala */
+    position: relative; /* Pozisyonu ayarla */
+    z-index: 1; /* Başlığı öne almak için */
+}
+
+
+/* Dış çerçeve stili */
+.outer-frame {
+background-color: #001832; /* Koyu mavi arka plan */
+border-radius: 10px; /* Kenarları yuvarlatılmış çerçeve */
+padding: 40px; /* İçerik ile kenar arasındaki boşluk */
+width: 70%; /* Genişlik */
+margin: 30px auto; /* Ortalamak için margin ayarlandı */
+position: relative; /* Pozisyonu ayarla */
+z-index: -1; /* Arka planda kalması için z-index değeri düşürüldü */
+min-height: 200px; /* Minimum yükseklik ayarlayın */
+}
+
+
+/* İç çerçeve stili */
+.inner-frame {
+    background-color: rgba(255, 255, 255, 0.911); /* Arka plan beyaz */
+    color: black; /* Yazı rengi siyah */
+    padding: 10px; /* İçerik için padding */
+    border-radius: 10px; /* Kenarları yuvarlatılmış çerçeve */
+    width: 100%; /* Genişlik */
+    z-index: 1; /* Çerçeveyi başlığın üstüne almak için */
+    position: relative; /* Pozisyonu ayarla */
+    min-height: 150px; /* Dikey büyüklük için minimum yükseklik eklendi */
+    margin-top: 20px; /* Dış çerçeveden ayırmak için margin eklendi */
+    height: 300px;
+}
+
+/* Diğer Bölümler İçin Çerçeve Stili */
+.section-container {
+    background-color: rgba(255, 255, 255, 0.919); /* Arka plan beyaz */
+    color: black; /* Yazı rengi siyah */
+    padding: 20px; /* İçerik için padding */
+    border-radius: 10px; /* Kenarları yuvarlatılmış çerçeve */
+    margin-top: 10px; /* Başlık ile arasındaki boşluğu artırıldı */
+    text-align: center; /* Metni ortala */
+    width: 50%; /* Genişliği ayarlandı */
+    margin: 10px auto; /* Ortala */
+    z-index: 1; /* Çerçeveyi başlığın üstüne almak için */
+    position: relative; /* Pozisyonu ayarla */
+    min-height: 120px; /* Dikey büyüklük için minimum yükseklik eklendi */
+}
+
+/* Projeler bölümü için özel stil */
+#projeler {
+    margin-top: 80px; /* CV ile projeler arasındaki mesafe artırıldı */
+}
+
+/* Scroll davranışı */
+html {
+    scroll-behavior: smooth;
+}
+
+.inner-frame {
+    background-color: rgba(255, 255, 255, 0.911);
+    color: black;
+    padding: 5px; /* Boşluğu daha az yapabilirsiniz */
+    border-radius: 10px;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    min-height: 50px; /* Minimum yüksekliği biraz artırın */
+    margin-top: 0px;
+}
+
+.inner-image {
+    width: 40%;
+    height: auto; /* Orantıyı korumak için otomatik yükseklik */
+    border-radius: 10px; /* Kenarları yuvarlatma */
+}
+.inner-frame {
+    display: flex; /* Flexbox düzeni kullanarak yan yana yerleştirme */
+    justify-content: space-between; /* Elemanlar arasındaki boşluğu eşit dağıtma */
+    margin-top: 20px; /* Üstteki boşluk */
+}
+
+.section-container {
+    flex: 1; /* Her bir elemanın eşit genişlikte olmasını sağlamak için */
+    margin-right: 10px; /* Sağdaki eleman için aralık ekleyin */
+}
+
+/* Son elemanın sağındaki boşluğu kaldırmak için */
+.section-container:last-child {
+    margin-right: 0;
+}
+.inner-frame {
+    display: flex; /* Flex düzeni ile içerikleri yan yana yerleştirme */
+    justify-content: space-between; /* Alanı eşit dağıtma */
+    align-items: flex-start; /* Üstten hizalama */
+}
+
+.section-container {
+    flex: 1; /* Her bir elemanın eşit genişlikte olmasını sağlamak için */
+    margin-right: 0px; /* Sağdaki eleman için aralık ekleyin */
+}
+
+.image-container {
+    width: 40%; /* Resmin genişliği */
+    display: flex; /* Flex düzeni kullanarak içeriği ortalama */
+    justify-content: center; /* Yatayda ortalamak için */
+}
+
+
+.inner-frame {
+    display: flex; /* Flex düzeni ile içerikleri yan yana yerleştirme */
+    justify-content: flex-start; /* Sol tarafa yasla */
+    align-items: flex-start; /* Üstten hizalama */
+    padding: 0; /* İç çerçevede boşluk yok */
+    margin: 0; /* İç çerçevede kenar boşluğu yok */
+}
+
+.section-container {
+    margin-right: 20px; /* Sağdaki eleman için aralık ekleyin */
+}
+
+.image-container {
+    flex: 0 0 auto; /* Resim alanının boyutunu sabitle */
+    margin-top: -50px;
+}
+
+.inner-image {
+    width: 80%; /* Resmin genişliği */
+    height: 500; /* Orantıyı korumak için otomatik yükseklik */
+    border-radius: 10px; /* Kenarları yuvarlatma */
+    display: block; /* Görüntüyü blok öğe yaparak etrafındaki boşlukları kaldırma */
+}
+
+/* Eğitim bölümü için stil */
+/* Eğitim bölümü için stil */
+#education {
+    display: flex; /* Flex düzeni ile yan yana dizim */
+    flex-direction: column; /* Dikey düzen */
+    align-items: center; /* Ortalamak için */
+    margin: 40px 0; /* Üst ve alt margin */
+}
+
+/* Dış çerçeve */
+.outer-frame {
+    text-align: center; /* Başlık ortalama */
+}
+
+/* İç çerçeve */
+.inner-frame {
+    display: flex; /* Flex düzeni ile yan yana dizim */
+    flex-wrap: wrap; /* Taşma durumunda sarma */
+    justify-content: center; /* Ortalamak için */
+    margin-top: 20px; /* Üstten boşluk */
+}
+
+/* Bölüm konteyneri */
+.section-container {
+    width: 400px; /* Fotoğrafın genişliği */
+    height: 270px; /* Fotoğrafın yüksekliği */
+    margin: 10px; /* Fotoğraflar arası boşluk */
+    position: relative; /* Pozisyon ayarı */
+    overflow: hidden; /* Taşmayı gizle */
+    border-radius: 10px; /* Kenar yuvarlama */
+}
+
+/* Fotoğraf stil ayarları */
+/* Fotoğraf stil ayarları */
+.inner-image {
+    width: 200%; /* Genişliği kapsayacak şekilde */
+    height: 100%; /* Yüksekliği kapsayacak şekilde */
+    object-fit: contain; /* Oranı koruyarak sığdırma */
+    transition: transform 0.3s; /* Geçiş efekti */
+}
+
+
+/* Hover durumunda büyütme efekti */
+.section-container:hover .inner-image {
+    transform: scale(1.1); /* Hover durumunda büyütme */
+}
+
+/* Yansıma stili */
+.section-container::after {
+    content: ""; /* İçerik olmadan bir öğe oluştur */
+    position: absolute; /* Mutlak konum */
+    bottom: 0; /* Alt kısımdan sıfırdan başla */
+    left: 0; /* Soldan sıfırdan başla */
+    width: 100%; /* Tam genişlik */
+    height: 100%; /* Tam yükseklik */
+    background: rgba(255, 255, 255, 0.5); /* Yansıma rengi ve opaklığı */
+    border-radius: 10px; /* Kenar yuvarlama */
+    transform: scaleY(-1); /* Yansıma efekti */
+    opacity: 0; /* Başlangıçta görünmez */
+    transition: opacity 0.3s; /* Geçiş efekti */
+}
+
+/* Hover durumunda yansıma görünür olacak şekilde */
+.section-container:hover::after {
+    opacity: 1; /* Yansıma görünür hale gelir */
+    filter: blur(2px); /* Yansımanın bulanık görünmesini sağla */
+}
+
+/* Projeler bölümü için stil */
+/* Projeler bölümü genel stil */
+#Projects {
+    display: flex; /* Projeler bölümündeki elemanları esnek bir şekilde hizalar */
+    flex-direction: column; /* Elemanları dikey hizalar (başlık üstte, içerik aşağıda) */
+    align-items: center; /* Elemanları yatayda ortalar */
+    margin: 40px 0; /* Üst ve alt boşluk (40px) */
+}
+
+/* Dış çerçeve */
+.outer-frame {
+    text-align: center; /* Başlık ve içerikleri ortalar */
+}
+
+/* İç çerçeve */
+.inner-frame {
+    display: flex; /* İç çerçeve elemanlarını yatayda hizalar */
+    justify-content: center; /* İç çerçevedeki elemanları yatayda ortalar */
+    margin-top: 20px; /* Üstten 20px boşluk bırakır */
+    flex-wrap: wrap; /* Elemanlar sığmazsa bir sonraki satıra geçer */
+}
+
+/* Her bir bölümün kapsayıcısı */
+.section-container {
+    width: 200px; /* Her bölümün genişliği 200px olarak ayarlanır */
+    height: 200px; /* Her bölümün yüksekliği 200px olarak ayarlanır */
+    margin: 10px; /* Bölümlerin arasında 10px boşluk bırakır */
+    position: relative; /* İleride efekt eklemek için pozisyonlama sağlar */
+    overflow: hidden; /* Taşan içeriği gizler, örneğin resim taşarsa görünmez */
+    border-radius: 10px; /* Köşeleri yuvarlatır */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti verir */
+}
+
+/* Fotoğraflar için */
+.inner-image {
+    width: 100%; /* Resmi kapsayıcının genişliğine göre ölçeklendirir */
+    height: 100%; /* Resmi kapsayıcının yüksekliğine göre ölçeklendirir */
+    object-fit: cover; /* Resmin en-boy oranını koruyarak kapsayıcıya sığmasını sağlar */
+    transition: transform 0.3s ease; /* Hover efekti için geçiş süresi ayarı */
+}
+
+/* Üzerine gelindiğinde resmi büyütme efekti */
+.inner-image:hover {
+    transform: scale(1.1); /* Resmi %10 oranında büyütür */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Hover sırasında gölge efektini güçlendirir */
+}
+ /* Body ve HTML için margin sıfırlaması */
+ html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Chakra Petch', sans-serif; /* Yazı stili */
+ }
